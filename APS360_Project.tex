@@ -9,15 +9,14 @@
 %\newcommand{\apsname}{Final Report}
 
 %######## APS360: Put your Group Number here
-\newcommand{\gpnumber}{7}
+\newcommand{\gpnumber}{6}
 
 \usepackage{hyperref}
 \usepackage{url}
 \usepackage{graphicx}
 
 %######## APS360: Put your project Title here
-\title{Formatting Instructions for APS360 Project  \\ 
-based on ICLR Conference Format}
+\title{APS360 Project Proposal}
 
 
 %######## APS360: Put your names, student IDs and Emails here
@@ -65,13 +64,49 @@ This template should be used for all your project related reports in APS360 cour
 
 
 
-\section{Project Document Submission for APS360 Course}
+\section{Introduction}
 
+Pokemon originated as a video game series in Japan in 1996, later coming to the Untied States in 1998 [1]. Since its original release, pokemon is now one of the most popular media franchises of all time and is the 3rd best selling video game franchise with over 440 million copies sold worldwide [2]. In the games, there are fictional creatures called "pokemon" that come in many shapes and sizes. There are exactly 1008 pokemon in total spread between 9 different generations [3]. For this project, we scope down and focus on the first two generations of pokemon which is 251 pokemon in total. The goal of this project is to correctly classify images of pokemon within the first two generations using machine learning as a tool, specifically deep learning. Deep learning is a great approach for this project as this is mainly an image classification project. Pokemons have many different distinct features that put them apart, meaning there are many features to extract and use. Finally, using deep learning to classify images of pokemon has interesting implications for the future as it may advance pokemon games to the point where the player can get information about each pokemon by using mods to identify the pokemon in real time.
 
-The format for the submissions is a variant of the ICLR 2022 format.
-Please read carefully the instructions below, and follow them
-faithfully. There is a \textbf{9 page} limit for the main text. References do not have any limitation. This is also ICLR's standard length for a paper submission. 
-If your main text goes to page 10, a $-20\%$ penalty would be applied. If your main text goes to page 11, you will not receive any grade for your submission. 
+\section{Illustration}
+
+Insert illustration here
+
+\section{Background and Related Work}
+
+Previous work on using machine learning as a tool for image classification of pokemon has been done by previous students of different universities. The first related work [4] focuses on using pokemon trading cards as the input for their model to output a customized trading card that follows a consistent design with pokemon trading cards. Their work consists of image generation, text generation, image classification, and text classification. 
+This paper however will focus strictly on image classification. The authors of the first related work use a convolutional neural network to classify their generated pokemon image. The second related work [5] focuses on classifying pokemon based on a limited amount of training data, specifically only using one image for the training set and one image for the test set. This paper will also focus on classifying pokemon, but with using more data to train our network. Their work consists of using two different instances of embedding networks to separate images with blank backgrounds and diverse backgrounds. It also uses saliency detection to obtain background objects to mask them. 
+
+\section{Data Processing}
+
+Insert text here
+
+\section {Architecture}
+
+Insert arch here
+
+\section {Baseline Model}
+
+Insert baseline here
+
+\section {Ethical Consideration}
+
+Insert ethical consideration here
+
+\section {Project Plan}
+
+Insert plan here
+
+\section {Risk Register}
+
+Within this project, there are risks that may detrimentally impact the project’s timeline, 
+completion, and performance. 
+
+The first risk involves the dataset itself. There may arise a situation where the images used for the project may contain identical images due to a variety of factors such as accidentally retrieving identical photos from different sources. With this in mind, it may be possible for images used in training to be leaked to the test dataset. The likelihood of this risk is moderate as we are retrieving the images of generation 2 pokemon ourselves. If this risk were to occur, the team would cut down the dataset to contain distinct pokemon images and reorient them to make up for the lost data.
+
+The second risk is that a team member may decide to drop the course sometime in the future. This would greatly affect the project plan as it is currently divided up equally amongst the four group members. The likelihood of this risk occurring is moderate as students tend to drop courses later on after midterm grades are out. If this risk were to occur, the group would reevaluate the project plan and divide up the work and readjust the project timeline accordingly. 
+
+The third risk is that classes may not be balanced after splitting up the data into train, validation, and test sets. For example, the distribution of samples for different pokemon or classes may be skewed towards the train dataset which can leave some classes undersampled. The likelihood of this risk occurring is moderate if we are not careful in how we split the data. To prevent this risk from occurring, the group will ensure that all classes within our dataset will be distributed equally amongst the train, validation, and test sets. If this risk were to occur, then the team will incorporate a function within our code to manually split the classes evenly amongst the three sets, causing the data to be balanced. 
 
 \subsection{Style}
 
