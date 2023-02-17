@@ -56,7 +56,7 @@ Student\# 1006702720 \\
 \maketitle
 
 \begin{abstract}
-This template should be used for all your project related reports in APS360 course. -- Write an abstract for your project here. Please review the \textbf{ First Course Tutorial} for a quick start
+For this project, we aim to classify the first two generations of pokemon images using deep learning as a tool. Data used to train and test the model is obtained in two ways. Images of the first generation pokemon were obtained from the “7000 Labeled Pokemon” dataset from Kaggle.  Images for second generation pokemon were obtained by all group members through manual selection from the internet. The architecture the group proposes for the model will be a combination of alexNet, Visual Geometry Group 19, and ResNet-34 architecture. The baseline model used to compare our final model is a Support Vector Machine (SVM) classification model due to its relatively high accuracy within certain image sets. The group looks into some ethical considerations such as ethical issues in data collection and in using the model in detrimental ways. Some risks are also considered for this project such as splitting up the dataset in an unbalanced way, duplicate images, and members dropping APS360 course. 
 %######## APS360: Do not change the next line. This shows your Main body page count.
 ----Total Pages: \pageref{last_page}
 \end{abstract}
@@ -65,13 +65,19 @@ This template should be used for all your project related reports in APS360 cour
 
 \section{Introduction}
 
-Pokemon originated as a video game series in Japan in 1996, later coming to the Untied States in 1998 [1]. Since its original release, pokemon is now one of the most popular media franchises of all time and is the 3rd best selling video game franchise with over 440 million copies sold worldwide [2]. In the games, there are fictional creatures called "pokemon" that come in many shapes and sizes. There are exactly 1008 pokemon in total spread between 9 different generations [3]. For this project, we scope down and focus on the first two generations of pokemon which is 251 pokemon in total. The goal of this project is to correctly classify images of pokemon within the first two generations using machine learning as a tool, specifically deep learning. Deep learning is a great approach for this project as this is mainly an image classification project. Pokemons have many different distinct features that put them apart, meaning there are many features to extract and use. Finally, using deep learning to classify images of pokemon has interesting implications for the future as it may advance pokemon games to the point where the player can get information about each pokemon by using mods to identify the pokemon in real time.
+Pokemon originated as a video game series in Japan in 1996, later coming to the Untied States in 1998 \citep{Britannica}. Since its original release, pokemon is now one of the most popular media franchises of all time and is the 3rd best selling video game franchise with over 440 million copies sold worldwide \citep{PokemonCompany}. In the games, there are fictional creatures called "pokemon" that come in many shapes and sizes. There are exactly 1008 pokemon in total spread between 9 different generations \citep{PokemonNum}. For this project, we scope down and focus on the first two generations of pokemon which is 251 pokemon in total. The goal of this project is to correctly classify images of pokemon within the first two generations using machine learning as a tool, specifically deep learning. Deep learning is a great approach for this project as this is mainly an image classification project. Pokemons have many different distinct features that put them apart, meaning there are many features to extract and use. Finally, using deep learning to classify images of pokemon has interesting implications for the future as it may advance pokemon games to the point where the player can get information about each pokemon by using mods to identify the pokemon in real time.
 
 \section{Illustration}
 
+Figure 1 contains an illustration of the overall idea and architecture of the model. 
+
+\begin{figure}[h]
+\begin{center}
 \graphicspath{ {./imgs/} }
 \includegraphics[width=\textwidth]{imgs/Modelillustration.png}
-\caption {\centerline{Figure 1. Overall idea and architecture of the model}}
+\end{center}
+\caption{Overall idea and architecture of the model}
+\end{figure}
 
 \section{Background and Related Work}
 
