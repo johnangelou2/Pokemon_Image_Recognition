@@ -69,7 +69,9 @@ Pokemon originated as a video game series in Japan in 1996, later coming to the 
 
 \section{Illustration}
 
-Insert illustration here
+\graphicspath{ {./imgs/} }
+\includegraphics[width=\textwidth]{imgs/Modelillustration.png}
+\caption {\centerline{Figure 1. Overall idea and architecture of the model}}
 
 \section{Background and Related Work}
 
@@ -97,7 +99,20 @@ In order to support our chosen CNN model, a Support Vector Machine (SVM) classif
 
 \section {Ethical Consideration}
 
-Insert ethical consideration here
+\begin{itemize}
+  \item Ethical issues in data collection (scraping images)
+  \begin{itemize}
+    \item Copyright issues: When we use python to scrape images from google or other relative websites to obtain data for our training\&testing datasets, we might unintentionally download images that copyrights may protect. Or, there can be images that its creators have forbidden to use in AI training.
+    \item Sensitive images: When we are randomly downloading images from google or other websites, we can unintentionally download images that are sensitive, and that might be appropriate to all people. For example, there can be images containing sexual, political, or violent content, which will not be suitable for all people.
+    \item For images that we scraped, there can be images containing private personal information, such as an image’s creator’s personal information, identity, location, time, etc. 
+    \item Possible solutions: To maximally avoid these problems, we can sensor all images that we are using as our dataset, and remove all inappropriate images, thus maximally preventing ethical issues in data collecting.
+  \end{itemize}
+  \item Ethical issues in using the model (predicting a pokemon’s name/type using a image)
+  \begin{itemize}
+    \item Using the model maliciously: Use human face images as input data, and uses the result generated to attack/insult others
+    \item Accuracy: The model cannot predict the pokemon 100\% correctly. If we are using this model to work on very formal work, the result can be very biased.
+  \end{itemize}
+\end{itemize}
 
 \section {Project Plan}
 
